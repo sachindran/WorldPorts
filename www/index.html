@@ -1,0 +1,475 @@
+F<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <title>Auth Demo</title>
+    
+    <script type="text/javascript" charset="utf-8" src="js/index.js"></script>
+	<link rel="stylesheet" href="themes/bluevoilet.min.css" />
+	<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	
+	<script language="javascript" type="text/javascript" src="js/jquery.jqplot.min.js"></script>
+	<link class="include" rel="stylesheet" type="text/css" href="css/jquery.jqplot.min.css" />
+	
+	<!-- Ignite UI Required Combined CSS Files -->
+    <link href="http://cdn-na.infragistics.com/igniteui/2014.2/latest/css/themes/infragistics/infragistics.theme.css" rel="stylesheet" />
+    <link href="http://cdn-na.infragistics.com/igniteui/2014.2/latest/css/structure/infragistics.css" rel="stylesheet" />
+    
+    <!--CSS file specific for chart styling -->
+    <link href="http://cdn-na.infragistics.com/igniteui/2014.2/latest/css/structure/modules/infragistics.ui.chart.css" rel="stylesheet" />
+
+    <script src="http://modernizr.com/downloads/modernizr-latest.js"></script>
+    
+	
+    <!-- Ignite UI Required Combined JavaScript Files -->
+    <script src="http://cdn-na.infragistics.com/igniteui/2014.2/latest/js/infragistics.core.js"></script>
+    <script src="http://cdn-na.infragistics.com/igniteui/2014.2/latest/js/infragistics.dv.js"></script>
+	<script src="http://cdn-na.infragistics.com/igniteui/2014.2/latest/js/infragistics.lob.js"></script>
+
+	
+	
+
+</head>
+
+<body>
+    
+<div data-theme="b" id="loginPage" data-role="page">
+
+    <div data-role="header">
+        
+    </div>
+	
+	
+
+    <div data-role="content" style="background-image:url('img/bgImg.jpg'); height:600px;">   
+		<h1 align="center">World Ports</br>&</br>Sustainability</h1>
+		<div align="center">
+		<img src="img/wp-logo1" alt="Mountain View"style="width:270px;height:180px;">        
+		</div>
+		<form id="loginForm">
+        <div data-role="fieldcontain" class="ui-hide-label">
+            <input type="text" name="username" id="username" value="" placeholder="Username" style="text-align:center" />
+        
+        	<div>&nbsp</div>
+        
+            <input type="password" name="password" id="password" value="" placeholder="Password" style="text-align:center"/>
+            <div>&nbsp</div>
+        </div>
+        <div>&nbsp</div>
+
+        <input onClick="handleLogin('Nor')" type="submit" value="Login" id="submitButton">
+		</form>
+		<p id="test"></p>
+        <!--input type="button" onClick='changePage("#Consumption");' value="TEST"></a-->
+    </div>
+
+    <div data-role="footer" data-position="fixed">
+        <h4>&copy; The KB Systems</h4>
+    </div>
+
+</div>
+
+
+
+<div data-role="page" data-theme="b" id="Consumption">
+        <div data-role="header" style="overflow:hidden;">
+			<h1>World Ports</h1>
+			<a href="#loginPage" id="conLogout" class="ui-btn-right" data-icon="home">Logout</a>
+			<!--button onClick="logout()" data-icon="home" id="Logout">Logout</button-->
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#" class="ui-state-persist" class="ui-btn-active">Consumption</a></li>
+					<li><a href="#Emissions" data-transition="pop">Emissions</a></li>
+					<li><a href="#Waste" data-transition="pop">Waste Discharge</a></li>
+				</ul>
+			</div>
+		</div>
+		<div data-role="content"  style="background-image:url('img/bgImg.jpg');">
+			<div data-role="fieldcontain">
+				<label for="conPort-name" class="select" align="center">Port Name</label>
+				<select name="conPort-name" id="conPort-name">
+				<option>Choose Port</option>
+				</select>
+				<div id="conOtherPorts">
+				</div>
+				<label for="conCategory" class="select" align="center">Category</label>
+				<select name="conCategory" id="conCategory">
+				<option>Choose Category</option>
+				</select>
+				<div class="ui-grid-a">
+					<div class="ui-block-a">
+						<label for="confromDate" align="center">From</label>
+						<input id="confromDate" type="date">
+					</div>
+					<div class="ui-block-b" align="center">
+						<label for="contoDate">To</label>
+						<input id="contoDate" type="date">
+					</div>
+				</div>
+				<div class="ui-grid-b" align="center">
+					<fieldset data-role="controlgroup" data-type="horizontal" >
+						<div class="ui-block-a" style="padding-top: 12px">
+							<label for="conflipComp" align="center" style=" font-weight: bold;font-family:Trebuchet MS;font-size: 100%;">Toggle to compare&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+						</div>
+						<div class="ui-block-b" style="padding-top: 7px">
+							<div  class="containing-element">
+								<select name="con-flip-min" id="conflipComp" data-role="slider">
+									<option value="Self">Self</option>
+									<option value="Compare">Compare</option>
+								</select>
+							</div>
+						</div>
+					</fieldset>
+				</div>
+				<div>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp </div>
+				
+				<script type="text/javascript" src="http://www.igniteui.com/data-files/uk-france-population.js"></script>
+
+    
+    <style type="text/css">
+       
+        .labelCol
+        {
+            width: 110px;
+        }
+        
+       .slider
+        {
+            width: 80px;
+            height: 10px;
+            margin: 10px;
+        }
+        .selectionOptions
+        {
+            margin-bottom: 10px;   
+        }
+
+        td { vertical-align: top; }
+        .chartElement {
+            padding-bottom: 20px;
+        }
+    </style>
+    
+	<div id="conGraphCompOptions">
+	</div>
+    <div class="selectionOptions" align="center">
+       Series type
+        <select id="seriesType">
+            <option value="area">Area</option>
+            <option value="column">Column</option>
+            <option value="line" selected="selected">Line</option>
+            <option value="splineArea">Spline Area</option>
+            <option value="spline">Spline</option>
+            <option value="stepArea">Step Area</option>
+            <option value="stepLine">Step Line</option>
+            <option value="waterfall">Waterfall</option>
+            <option value="point">Point</option>
+        </select>
+		</div>
+	</div>
+	<button onClick="displayChart()" value="Chart" class="ui-btn ui-shadow ui-corner-all ui-icon-home" id="conchartDisplay">Chart</button>
+         
+    
+    <table>
+        <tr>
+            <td id="chart" class="chartElement" style="width:80% height:50%"/>      
+            
+        </tr>
+		<tr>
+			<td id="lineLegend" style="float: center"/>
+		</tr>
+    </table>
+		<div>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp </div>
+		<!--div id="conHorizontalZoomSlider"><div-->
+		<input type="range" name="slider" id="horizontalZoomSlider" value="1" min="1" max="100"/>
+		
+			
+        </div>
+ 
+        <div data-role="footer" data-position="fixed">
+            <h3>&copy; The KB Systems</h3>
+        </div>
+    </div>
+	
+	<!--Emissions Page-->
+<div data-role="page" id="Emissions">
+        <div data-role="header" style="overflow:hidden;">
+			<h1>World Ports</h1>
+			<a href="#loginPage" id="emiLogout" class="ui-btn-right" data-icon="home">Logout</a>
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#Consumption" data-transition="pop">Consumption</a></li>
+					<li><a href="#" class="ui-state-persist" class="ui-btn-active">Emissions</a></li>
+					<li><a href="#Waste" data-transition="pop">Waste Discharge</a></li>
+				</ul>
+			</div>
+		</div>
+		<div data-role="content" style="background-image:url('img/bgImg.jpg');">
+			<div data-role="fieldcontain">
+				<label for="emiPort-name" class="select" align="center">Port Name</label>
+				<select name="emiPort-name" id="emiPort-name">
+				<option>Choose Port</option>
+				</select>
+				<div id="emiOtherPorts">
+				</div>
+				<label for="emiCategory" class="select" align="center">Category</label>
+				<select name="emiCategory" id="emiCategory">
+				<option>Choose Category</option>
+				</select>
+				<label for="emiSubCategory" class="select" align="center">Sub Category</label>
+				<select name="emiSubCategory" id="emiSubCategory">
+				<option>Choose Sub Category</option>
+				</select>
+				<div class="ui-grid-a">
+					<div class="ui-block-a">
+						<label for="emifromDate" align="center">From</label>
+						<input id="emifromDate" type="date">
+					</div>
+					<div class="ui-block-b" align="center">
+						<label for="emitoDate">To</label>
+						<input id="emitoDate" type="date">
+					</div>
+				</div>
+				<div class="ui-grid-b" align="center">
+					<fieldset data-role="controlgroup" data-type="horizontal" >
+						<div class="ui-block-a" style="padding-top: 12px">
+							<label for="emiflipComp" align="center" style=" font-weight: bold;font-family:Trebuchet MS;font-size: 100%;">Toggle to compare&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+						</div>
+						<div class="ui-block-b" style="padding-top: 7px">
+							<div  class="containing-element">
+								<select name="emi-flip-min" id="emiflipComp" data-role="slider">
+									<option value="Self">Self</option>
+									<option value="Compare">Compare</option>
+								</select>
+							</div>
+						</div>
+					</fieldset>
+				</div>
+				<div>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp </div>
+				
+				<script type="text/javascript" src="http://www.igniteui.com/data-files/uk-france-population.js"></script>
+
+    
+    <style type="text/css">
+       
+        .labelCol
+        {
+            width: 110px;
+        }
+        
+       .slider
+        {
+            width: 80px;
+            height: 10px;
+            margin: 10px;
+        }
+        .selectionOptions
+        {
+            margin-bottom: 10px;   
+        }
+
+        td { vertical-align: top; }
+        .chartElement {
+            padding-bottom: 20px;
+        }
+    </style>
+    
+	<div id="emiGraphCompOptions">
+	</div>
+    <div class="selectionOptions" align="center">
+       Series type
+        <select id="emiSeriesType">
+            <option value="area">Area</option>
+            <option value="column">Column</option>
+            <option value="line" selected="selected">Line</option>
+            <option value="splineArea">Spline Area</option>
+            <option value="spline">Spline</option>
+            <option value="stepArea">Step Area</option>
+            <option value="stepLine">Step Line</option>
+            <option value="waterfall">Waterfall</option>
+            <option value="point">Point</option>
+        </select>
+		</div>
+	</div>
+	<button onClick="DisplayChartEmiWas('emi')" value="Chart" class="ui-btn ui-shadow ui-corner-all ui-icon-home" id="emichartDisplay">Chart</button>
+         
+    
+    <table>
+        <tr>
+            <td id="emiChart" class="chartElement" style="width:80% height:50%"/>      
+            
+        </tr>
+		<tr>
+			<td id="emiLineLegend" style="float: center"/>
+		</tr>
+    </table>
+		<div>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp </div>
+		<!--div id="conHorizontalZoomSlider"><div-->
+		<input type="range" name="slider" id="emiHorizontalZoomSlider" value="1" min="1" max="100"/>
+		
+			
+        </div>
+ 
+        <div data-role="footer" data-position="fixed">
+            <h3>&copy; The KB Systems</h3>
+        </div>
+</div>
+
+<!--Waste Discharge Page-->
+
+
+<div data-role="page" id="Waste">
+        <div data-role="header" style="overflow:hidden;">
+			<h1>World Ports</h1>
+			<a href="#loginPage" id="wasLogout" class="ui-btn-right" data-icon="home">Logout</a>
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#Consumption" data-transition="pop">Consumption</a></li>
+					<li><a href="#Emissions" data-transition="pop">Emissions</a></li>
+					<li><a href="#"  class="ui-state-persist" class="ui-btn-active">Waste Discharge</a></li>
+				</ul>
+			</div>
+		</div>
+		<div data-role="content" style="background-image:url('img/bgImg.jpg');">
+			<div data-role="fieldcontain">
+				<label for="wasPort-name" class="select" align="center">Port Name</label>
+				<select name="wasPort-name" id="wasPort-name">
+				<option>Choose Port</option>
+				</select>
+				<div id="wasOtherPorts">
+				</div>
+				<label for="wasCategory" class="select" align="center">Category</label>
+				<select name="wasCategory" id="wasCategory">
+				<option>Choose Category</option>
+				</select>
+				<label for="wasSubCategory" class="select" align="center">Sub Category</label>
+				<select name="wasSubCategory" id="wasSubCategory">
+				<option>Choose Sub Category</option>
+				</select>
+				<div class="ui-grid-a">
+					<div class="ui-block-a">
+						<label for="wasfromDate" align="center">From</label>
+						<input id="wasfromDate" type="date">
+					</div>
+					<div class="ui-block-b" align="center">
+						<label for="wastoDate">To</label>
+						<input id="wastoDate" type="date">
+					</div>
+				</div>
+				<div class="ui-grid-b" align="center">
+					<fieldset data-role="controlgroup" data-type="horizontal" >
+						<div class="ui-block-a" style="padding-top: 12px">
+							<label for="wasflipComp" align="center" style=" font-weight: bold;font-family:Trebuchet MS;font-size: 100%;">Toggle to compare&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+						</div>
+						<div class="ui-block-b" style="padding-top: 7px">
+							<div  class="containing-element">
+								<select name="was-flip-min" id="wasflipComp" data-role="slider">
+									<option value="Self">Self</option>
+									<option value="Compare">Compare</option>
+								</select>
+							</div>
+						</div>
+					</fieldset>
+				</div>
+				<div>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp </div>
+				
+				<script type="text/javascript" src="http://www.igniteui.com/data-files/uk-france-population.js"></script>
+
+    
+    <style type="text/css">
+       
+        .labelCol
+        {
+            width: 110px;
+        }
+        
+       .slider
+        {
+            width: 80px;
+            height: 10px;
+            margin: 10px;
+        }
+        .selectionOptions
+        {
+            margin-bottom: 10px;   
+        }
+
+        td { vertical-align: top; }
+        .chartElement {
+            padding-bottom: 20px;
+        }
+    </style>
+    
+	<div id="wasGraphCompOptions">
+	</div>
+    <div class="selectionOptions" align="center">
+       Series type
+        <select id="wasSeriesType">
+            <option value="area">Area</option>
+            <option value="column">Column</option>
+            <option value="line" selected="selected">Line</option>
+            <option value="splineArea">Spline Area</option>
+            <option value="spline">Spline</option>
+            <option value="stepArea">Step Area</option>
+            <option value="stepLine">Step Line</option>
+            <option value="waterfall">Waterfall</option>
+            <option value="point">Point</option>
+        </select>
+		</div>
+	</div>
+	<button onClick="DisplayChartEmiWas('was')" value="Chart" class="ui-btn ui-shadow ui-corner-all ui-icon-home" id="waschartDisplay">Chart</button>
+         
+    
+    <table>
+        <tr>
+            <td id="wasChart" class="chartElement" style="width:80% height:50%"/>      
+            
+        </tr>
+		<tr>
+			<td id="wasLineLegend" style="float: center"/>
+		</tr>
+    </table>
+		<div>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp </div>
+		<!--div id="conHorizontalZoomSlider"><div-->
+		<input type="range" name="slider" id="wasHorizontalZoomSlider" value="1" min="1" max="100"/>
+		
+			
+        </div>
+ 
+        <div data-role="footer" data-position="fixed">
+            <h3>&copy; The KB Systems</h3>
+        </div>
+    </div>
+
+
+	<script>
+		app.initialize();
+	</script>
+	<!-- Don't touch this! -->
+        <script class="include" type="text/javascript" src="js/jquery.jqplot.min.js"></script>
+ 
+        <!-- Additional plugins go here -->
+ 
+        <script class="include" type="text/javascript" src="js/jqplot.barRenderer.min.js"></script>
+        <script class="include" type="text/javascript" src="js/jqplot.pieRenderer.min.js"></script>
+ 
+        <script class="include" type="text/javascript" src="js/jqplot.categoryAxisRenderer.min.js"></script>
+        <script class="include" type="text/javascript" src="js/jqplot.pointLabels.min.js"></script>
+		
+		<script type="text/javascript" src="js/jqplot.cursor.min.js"></script>
+		<script type="text/javascript" src="js/jqplot.dateAxisRenderer.min.js"></script>
+		
+		<script type="text/javascript" src="js/jqplot.logAxisRenderer.min.js"></script>
+		<script type="text/javascript" src="js/jqplot.canvasTextRenderer.min.js"></script>
+		<script type="text/javascript" src="js/jqplot.canvasAxisTickRenderer.min.js"></script>
+		<script type="text/javascript" src="js/jqplot.ohlcRenderer.min.js"></script>
+ 
+        <!-- End additional plugins -->
+</body>
+</html>

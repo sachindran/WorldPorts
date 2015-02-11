@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.thekbsystems.worldports" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <preference name="AllowInlineMediaPlayback" value="false" />
+    <preference name="AutoHideSplashScreen" value="true" />
+    <preference name="BackupWebStorage" value="cloud" />
+    <preference name="DisallowOverscroll" value="false" />
+    <preference name="EnableViewportScale" value="false" />
+    <preference name="FadeSplashScreen" value="true" />
+    <preference name="FadeSplashScreenDuration" value=".25" />
+    <preference name="KeyboardDisplayRequiresUserAction" value="true" />
+    <preference name="MediaPlaybackRequiresUserAction" value="false" />
+    <preference name="ShowSplashScreenSpinner" value="true" />
+    <preference name="SuppressesIncrementalRendering" value="false" />
+    <preference name="TopActivityIndicator" value="gray" />
+    <preference name="GapBetweenPages" value="0" />
+    <preference name="PageLength" value="0" />
+    <preference name="PaginationBreakingMode" value="page" />
+    <preference name="PaginationMode" value="unpaginated" />
+    <feature name="LocalStorage">
+        <param name="ios-package" value="CDVLocalStorage" />
+    </feature>
+    <name>World-Ports</name>
+    <description>
+        Mobile app of World Ports and Sustainability to view various graphs. The graphs are on parameters to measure Energy Consumption and Waste Discharge of Ports around the world.
+    </description>
+    <author email="thekbsystems@gmail.com" href="http://www.thekbsystems.com/WorldPorts-SustainabilityForum/Home.aspx">
+        The KB Systems
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <preference name="SplashScreen" value="splash" />
+    <preference name="SplashScreenDelay" value="10000" />
+    <icon gap:platform="ios" height="180" src="www/res/icon/ios/icon-60@3x.png" width="180" />
+    <icon gap:platform="ios" height="60" src="www/res/icon/ios/icon-60.png" width="60" />
+    <icon gap:platform="ios" height="120" src="www/res/icon/ios/icon-60@2x.png" width="120" />
+    <icon gap:platform="ios" height="76" src="www/res/icon/ios/icon-76.png" width="76" />
+    <icon gap:platform="ios" height="152" src="www/res/icon/ios/icon-76@2x.png" width="152" />
+    <icon gap:platform="ios" height="29" src="www/res/icon/ios/icon-small.png" width="29" />
+    <icon gap:platform="ios" height="58" src="www/res/icon/ios/icon-small@2x.png" width="58" />
+    <icon gap:platform="ios" height="40" src="www/res/icon/ios/icon-Small-40 2.png" width="40" />
+    <icon gap:platform="ios" height="80" src="www/res/icon/ios/icon-Small-40@2x 2.png" width="80" />
+    <gap:splash gap:platform="ios" height="480" src="www/res/screen/ios/Default.png" width="320" />
+    <gap:splash gap:platform="ios" height="960" src="www/res/screen/ios/Default@2x.png" width="640" />
+    <gap:splash gap:platform="ios" height="1136" src="www/res/screen/ios/Default-568h@2x~iphone.png" width="640" />
+    <gap:splash gap:platform="ios" height="1334" src="www/res/screen/ios/Default-667h.png" width="750" />
+    <gap:splash gap:platform="ios" height="2208" src="www/res/screen/ios/Default-736h.png" width="1242" />
+    <gap:splash gap:platform="ios" height="1242" src="www/res/screen/ios/Default-Landscape-736h.png" width="2208" />
+    <gap:splash gap:platform="ios" height="1024" src="www/res/screen/ios/Default-Portrait.png" width="768" />
+    <gap:splash gap:platform="ios" height="768" src="www/res/screen/ios/Default-Landscape.png" width="1024" />
+    <gap:splash gap:platform="ios" height="2048" src="www/res/screen/ios/Default-Portrait@2x.png" width="1536" />
+    <gap:splash gap:platform="ios" height="1536" src="www/res/screen/ios/Default-Landscape@2x.png" width="2048" />
+</widget>

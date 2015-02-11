@@ -1,0 +1,321 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"d",
+				"districts"
+			],
+			[
+				"usern",
+				"UserName"
+			],
+			[
+				"cha",
+				"changePage"
+			],
+			[
+				"re",
+				"refresh"
+			],
+			[
+				"GetDataforGraphEM",
+				"GetDataforGraphEmiWas"
+			],
+			[
+				"subCat",
+				"subCatId"
+			],
+			[
+				"subc",
+				"subCatId"
+			],
+			[
+				"v",
+				"val"
+			],
+			[
+				"json",
+				"jsonText"
+			],
+			[
+				"fun",
+				"function"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "config.xml",
+			"settings":
+			{
+				"buffer_size": 674,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 147.0,
+		"selected_items":
+		[
+			[
+				"add",
+				"Project: Add Folder"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/sachin/Documents/Android_workspace/phonegap/JP-Energy/www/index.html",
+		"/Users/sachin/Documents/Android_workspace/phonegap/JP-Energy/www/js/index.js",
+		"/Users/sachin/Documents/Android_workspace/ionic/JP-Energy/www/js/services.js",
+		"/Users/sachin/Documents/Android_workspace/ionic/JP-Energy/www/templates/tab-chats.html",
+		"/Users/sachin/Documents/Android_workspace/ionic/JP-Energy/www/js/controllers.js",
+		"/Users/sachin/Documents/Android_workspace/ionic/JP-Energy/www/templates/tabs.html",
+		"/Users/sachin/Documents/Android_workspace/ionic/JP-Energy/www/templates/tab-graphs.html",
+		"/Users/sachin/Documents/Android_workspace/ionic/JP-Energy/www/js/app.js",
+		"/Users/sachin/Documents/Android_workspace/ionic/JP-Energy/www/index.html",
+		"/Users/sachin/Documents/Android_workspace/ionic/JP-Energy/scss/ionic.app.scss",
+		"/Users/sachin/Documents/Android_workspace/phonegap/testApp/www/index.html",
+		"/Users/sachin/Documents/Android_workspace/ionic/JP-Energy/www/templates/tab-dash.html",
+		"/Users/sachin/Documents/Android_workspace/ionic/JP-Energy/www/templates/tab-cost.html",
+		"/Users/sachin/Documents/Android_workspace/ionic/JP-Energy/www/templates/tab-friends.html",
+		"/Users/sachin/Documents/Android_workspace/ionic/JP-Energy/www/templates/tabs-cost.html",
+		"/Users/sachin/Documents/Android_workspace/ionic/JP-Energy/www/templates/tabs-graphs.html",
+		"/Users/sachin/Documents/Android_workspace/ionic/JP-Energy/www/lib/angular/bower.json",
+		"/Users/sachin/Documents/Android_workspace/ionic/JP-Energy/www/css/style.css",
+		"/Users/sachin/Documents/Android_workspace/ionic/JP-Energy/www/lib/core-component-page/core-component-page.html",
+		"/Users/sachin/Documents/Android_workspace/ionic/JP-Energy/www/lib/paper-button/paper-button.html",
+		"/Users/sachin/Documents/Android_workspace/ionic/JP-Energy/www/lib/polymer/layout.html",
+		"/Users/sachin/Documents/Android_workspace/phonegap/testApp/www/js/index.js"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"graphDataValidationEmiWas",
+			"GetMultipleDataforGraph",
+			"multiple",
+			"refresh",
+			"trigger",
+			"refresh",
+			"remove",
+			"destroy",
+			"change",
+			"device",
+			"phonegap",
+			"cordova",
+			".css",
+			"KB",
+			"s/",
+			"<s/",
+			"<s",
+			"Waste",
+			"  ",
+			"bar",
+			":\n",
+			"date",
+			"dashboard",
+			"('",
+			"checkp",
+			"check",
+			"trigg",
+			"deviceReady",
+			"submitButton",
+			"lineLegend",
+			"graphCompOptions",
+			"MaxSeriesSet",
+			"GetDataforGraph",
+			"otherPortsSel",
+			"Category",
+			"conCategory",
+			"chart",
+			"igniteChartEmiWas",
+			"fromDate",
+			"Port-name",
+			"emiGetDataforGraph",
+			"hideOtherPorts",
+			"conGraphCompOptions",
+			"graphCompOptions",
+			"otherPortsSel",
+			"OtherPorts",
+			"graphCompOptions",
+			"otherPortsConDiv",
+			"hideOtherPorts",
+			"flipComp",
+			"conflipComp",
+			"remove",
+			"function",
+			"wasCategory",
+			"emiCategory",
+			"getport"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "config.xml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 674,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								604,
+								604
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/XML/XML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.sftp":
+	{
+		"height": 0.0
+	},
+	"project": "config.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 224.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

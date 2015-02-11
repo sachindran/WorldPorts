@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.thekbsystems.worldports" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>World-Ports</name>
+    <description>
+        Mobile app of World Ports and Sustainability to view various graphs. The graphs are on parameters to measure Energy Consumption and Waste Discharge of Ports around the world.
+    </description>
+    
+    <author email="thekbsystems@gmail.com" href="http://www.thekbsystems.com/WorldPorts-SustainabilityForum/Home.aspx">
+        The KB Systems
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <preference name="SplashScreen" value="splash" />
+    <preference name="SplashScreenDelay" value="10000" />
+     <!-- iPhone 6 / 6+ -->
+    <icon src="www/res/icon/ios/icon-60@3x.png" gap:platform="ios" width="180" height="180" />
+
+    <!-- iPhone / iPod Touch  -->
+    <icon src="www/res/icon/ios/icon-60.png" gap:platform="ios" width="60" height="60" />
+    <icon src="www/res/icon/ios/icon-60@2x.png" gap:platform="ios" width="120" height="120" />
+
+    <!-- iPad -->
+    <icon src="www/res/icon/ios/icon-76.png" gap:platform="ios" width="76" height="76" />
+    <icon src="www/res/icon/ios/icon-76@2x.png" gap:platform="ios" width="152" height="152"  />
+
+    <!-- Settings Icon -->
+    <icon src="www/res/icon/ios/icon-small.png" gap:platform="ios" width="29" height="29" />
+    <icon src="www/res/icon/ios/icon-small@2x.png" gap:platform="ios" width="58" height="58" />
+
+    <!-- Spotlight Icon -->
+    <icon src="www/res/icon/ios/icon-Small-40 2.png" gap:platform="ios" width="40" height="40" />
+    <icon src="www/res/icon/ios/icon-Small-40@2x 2.png" gap:platform="ios" width="80" height="80" />
+
+    <!-- iPhone and iPod touch -->
+    <gap:splash src="www/res/screen/ios/Default.png" gap:platform="ios" width="320" height="480" />
+    <gap:splash src="www/res/screen/ios/Default@2x.png" gap:platform="ios" width="640" height="960" />
+
+    <!-- iPhone 5 / iPod Touch (5th Generation) -->
+    <gap:splash src="www/res/screen/ios/Default-568h@2x~iphone.png" gap:platform="ios" width="640" height="1136" />
+
+    <!-- iPhone 6 -->
+    <gap:splash src="www/res/screen/ios/Default-667h.png" gap:platform="ios" width="750" height="1334" />
+    <gap:splash src="www/res/screen/ios/Default-736h.png" gap:platform="ios" width="1242" height="2208" />
+    <gap:splash src="www/res/screen/ios/Default-Landscape-736h.png" gap:platform="ios" width="2208" height="1242" />
+
+    <!-- iPad -->
+    <gap:splash src="www/res/screen/ios/Default-Portrait.png" gap:platform="ios" width="768" height="1024" />
+    <gap:splash src="www/res/screen/ios/Default-Landscape.png" gap:platform="ios" width="1024" height="768" />
+
+    <!-- Retina iPad -->
+    <gap:splash src="www/res/screen/ios/Default-Portrait@2x.png" gap:platform="ios" width="1536" height="2048" />
+    <gap:splash src="www/res/screen/ios/Default-Landscape@2x.png" gap:platform="ios" width="2048" height="1536" />
+    
+
+
+</widget>
